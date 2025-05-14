@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(148, 180, 193);
+            height: 100px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(241, 239, 236);
+            text-shadow: 09px 0px 0px rgb(84, 119, 146);
+            text-decoration: underline;
+        }
+        main{
+            background-color: rgb(235, 236, 218) ;
+            height:600px;
+            color: rgba(43, 42, 41, 0.895);
+            font-size:20px;
+        }
+        .moveup{
+            opacity: 0;
+            transform: translateY(7opx);
+            animation: moveup 10s forwards;
+        }
+        @keyframes moveup {
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        footer{
+            background-color:rgb(148, 180, 193);
+            height:50px;
+            padding:10px;
+            color: rgb(234, 231, 231);
+            font-size:20px;
+            text-decoration: underline
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+</head>
+<body class="lato-regular">
+    <center>
+        <header>
+            <h1><i>Know all about me!</i></h1>
+        </header>
+        <main>
+<p><b>
+    Hi, my name is Archana. I have a deep love for mathematics and enjoy the logical thinking and problem-solving it involves. I’m someone who thrives on challenges—they motivate me to grow, learn, and push my limits. Whether it’s tackling a complex equation or stepping out of my comfort zone, I’m always ready to take things head-on with curiosity and determination.
+</p> <br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK0sLNEh96iDRp0TMWYdTY4pjgTOfOaQcMjg&s" alt=""> <br><br>
+<p>
+    I'm someone who is incredibly goal-driven—I love setting clear objectives and putting in the work to reach them. Challenges don’t scare me; in fact, they motivate me to grow and keep pushing forward. At the same time, I truly value kindness. I believe in being compassionate, supportive, and respectful to everyone around me. Whether I'm working toward a big goal or helping someone through a tough time, I always try to stay grounded in empathy and stay true to who I am.
+</p></b>
+<p class="moveup"> 
+    Thank you for getting to know me! See you next time 
+</p> <br>
+        </main>
+        <footer>
+Blog of Archana Padmaraj
+        </footer>
+    </center>
+</body>
+</html>
