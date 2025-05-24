@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* relative moves it with respect to the other div, but absolute can overlap two or more divison . that is imagine a desk now if there were two boxes on them and we did relative it would mot overlap with the second box, but absolute will not think about the position of any other boxes, thus they will overlap.*/
+        div{
+          height: 200px;
+            width: 200px;
+            border: 2px solid black;  
+        }
+        #first{
+            background-color: red;
+            position:relative;
+            left: 220px;
+            top: 500px;
+        }
+        #second{
+              background-color:yellow;
+            position: relative;
+        }
+        #third{
+              background-color: green;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+
+    </div>
+    <div id="second">
+
+    </div>
+    <div id="third">
+
+    </div>
+</body>
+</html>
