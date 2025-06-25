@@ -1,0 +1,1 @@
+    // console.log("random number between 1 and 10 is" $(randomint));
