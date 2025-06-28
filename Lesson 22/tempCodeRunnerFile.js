@@ -1,0 +1,2 @@
+ console.log(Book2.Name, "by", Book2.Author ,"is available now only for just", Book2.Price, "Buy Now!!")
+    console.log(Book3.Name, "by", Book3.Author, "is available now only for just", Book3.Price, "Buy Now!!")
