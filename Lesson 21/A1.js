@@ -18,3 +18,18 @@
         console.log("using while loop, value of i:",i)
         i++
     }
+
+    const day = "Monday";
+switch(day){
+    case "Monday":
+    console.log("Start of the week!")
+     break;
+      case "Tuesday" :
+    console.log("Its only Tuesday!")
+     break;
+      case "Friday":
+    console.log("Almost the weekend!")
+     break;
+    default:
+    console.log("Its a regular day")
+}
