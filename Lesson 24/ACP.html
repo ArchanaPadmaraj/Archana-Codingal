@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        fieldset {
+            padding: 40px;
+            width: 200px;
+        }
+
+        button {
+            width: 200px;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: rgb(106, 201, 106);
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Login Page</h1>
+        <fieldset>
+            Username/Credentials:<input type="text" id="username"> <br><br>
+            Enter Password: <input type="password" id="password"> <br><br><br>
+            <button onclick="Login()"><u>Login</u></button>
+            <h2 id="display"></h2>
+        </fieldset>
+
+        <script>
+            function Login() {
+                var name = document.getElementById("username").value;
+                document.getElementById("display").innerHTML =
+                    name + "Login Completed";
+            }
+        </script>
+    
+</body>
+
+</html>
