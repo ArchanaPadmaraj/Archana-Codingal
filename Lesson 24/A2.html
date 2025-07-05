@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        fieldset {
+            padding: 40px;
+            width: 200px;
+        }
+
+        button {
+            width: 200px;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: rgb(106, 201, 106);
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Sum Calculator!</h1>
+        <fieldset>
+            Number 1: <input type="number" id="num1"><br><br>
+            Number 2: <input type="number" id="num2"><br><br>
+            <button onclick="add()">Add the two numbers</button>
+        </fieldset>
+        <fieldset style="margin-top: 20px;">
+            <h2 id="result">Answer will be shown here!</h2>
+        </fieldset>
+    </center>
+
+    <script>
+        function add() {
+            let a = parseInt(document.getElementById("num1").value)
+            let b = parseInt(document.getElementById("num2").value)
+            let answer = a + b
+            document.getElementById("result").innerHTML = `the ans is : ${answer}`;
+        }
+    </script>
+</body>
+
+</html>
