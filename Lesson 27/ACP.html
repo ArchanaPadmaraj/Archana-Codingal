@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Enter the Expression</h1>
+        <hr>
+        <input type="text" name="" id="num">
+        <br><br>
+        <button onclick="Calculate()">Magic</button>
+        <h2 id ="result"></h2>
+    </center>
+    <script>
+        function Calculate(){
+            let exp = document.getElementById("num").value
+            let ans = eval(exp)
+            document.getElementById("result").innerHTML = `Your ans for ${exp} is: ${ans}`
+        }
+    </script>
+</body>
+</html>
