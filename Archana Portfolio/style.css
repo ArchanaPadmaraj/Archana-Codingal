@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+body{
+    height:100vh;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+#nav{
+    background-color: rgb(39, 63, 79);
+    columns: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navpart1{
+    display: flex;
+    justify-content: center;
+}
+
+#navpart2{
+     display: flex;
+    justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: white;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.jetbrains-mono {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#main-home{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 243, 239);
+}
+
+.image1{
+    height:50vh;
+    width:49vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.jetbrains-mono1 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   background-color:rgb(39, 63, 79); ;
+   color: white;
+   padding: 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
