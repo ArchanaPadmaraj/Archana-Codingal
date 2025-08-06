@@ -63,13 +63,16 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(249, 243, 239);
+    padding-right: 10px;
+    margin: 10px;
 }
 
 .image1{
-    height:50vh;
-    width:49vh;
+    height: 100%;
+    width:100%;
     display: flex;
     justify-content: center;
+    align-items: center
 }
 
 
@@ -85,8 +88,28 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
+   
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.project-title{
+   font-family: "Libertinus Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+.title-intro{
+  font-family: "Ruda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(55, 54, 54);
+}
 
 
