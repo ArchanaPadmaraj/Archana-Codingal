@@ -1,0 +1,1 @@
+print(f"\nYou got {score} out of 3 correct!")
