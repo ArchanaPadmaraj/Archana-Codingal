@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter import random
+import random
 
 root = Tk()
 root.title=("Rock,Paper,Scissors!")
@@ -8,18 +8,18 @@ root.config(bg="#f0f0f0")
 
 choices = ("Rock","Paper","Scissors")
 
-user_label = Label(root, text="Your Turn!")
+user_label = Label(root, text="My Turn!")
 user_label.pack(pady=10)
 
-result_label = Label(root, text="My turn!")
+result_label = Label(root, text="Let the games Begin")
 result_label.pack(pady=10)
 
-comp_label = Label(root,text="Computers turn")
+comp_label = Label(root,text="Your turn")
 comp_label.pack(pady=10)
 
 def play (user_choice):
     comp_choice = random.choice(choices)
-    comp_label_config(text = f"I choose: {comp_choice}")
+    comp_label.config(text = f"I choose: {comp_choice}")
 
     if user_choice == comp_choice:
         result = "Its a draw!"
@@ -30,19 +30,20 @@ def play (user_choice):
         result = "You win!"
     else:
         result = "I win! Better Luck next time!"
-
-result_label.config(text=result)
+        result_label.config(text=result)
 
 btn_frame = Frame(root)
 btn_frame.pack(pady=20)
 
 rock_btn = Button(btn_frame, text="Rock", width=10, font=("Arial", 12), command=lambda: play("Rock"))
-rock_btngrid(row=0, column=0, padx=10)
+rock_btn.grid(row=0, column=0, padx=10)
 
 paper_btn = Button(btn_frame, text="Paper", width=10, font=("Arial", 12), command=lambda: play("Paper"))
 paper_btn.grid(row=0, column=1, padx=10)
 
 scissors_btn = Button(btn_frame, text="Scissors", width=10, font=("Arial", 12), command=lambda: play("Scissors"))
 scissors_btn.grid(row=0, column=2, padx=10)
+
+root.mainloop()
         
         
